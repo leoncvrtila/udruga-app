@@ -1,0 +1,68 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------BODIES*/
+
+.GoverningBodies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.GoverningBodies img {
+  height: 120px;
+}
+
+.GoverningBodies a {
+    background: #ffffff;
+    color: black;
+    width: 20%;
+    height: 300px;
+    margin-bottom: 2%;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: -webkit-center;
+    padding-top: 20px;
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-shadow: 0px 1px 1px 0px #dedede;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    @include respond-to(mob) { 
+        width: 85%;    
+    }
+    @include respond-to(medium-screens) { 
+      width: 85%;    
+  }
+  @include respond-to(laptop-screens) { 
+    width: 30%;    
+}
+}
+
+.GoverningBodies a:hover {
+    box-shadow: 1px 3px 3px 1px #dedede;
+}

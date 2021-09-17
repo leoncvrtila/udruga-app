@@ -1,0 +1,161 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------CLUB*/
+
+.ClubItemWrap {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+
+}
+
+.ClubItem {
+
+    display: flex;
+    justify-content: center;
+    //width: 100%;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 1px 4px 0px rgba(222, 222, 222, 0.65);
+    background: #ffffff;
+}
+
+.ClubItem:hover {
+    background:  #fbfbfb;
+}
+
+.ClubItemWrap a {
+    width: 35%;
+    margin-top: 2%;
+    @include respond-to(mob) { 
+        width: 80%;    
+    }
+}
+
+
+.ClubItem img {
+    height: 100px;
+}
+
+.ClubWrap table{
+
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
+}
+
+.CreateEventWrap {
+    border: 1px solid #dedede;
+    box-shadow: 0px 1px 1px 0px #afafaf;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: white;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    @include respond-to(mob) { 
+        margin-top: 5%;
+    }
+    @include respond-to(medium-screens) { 
+        margin-top: 5%;
+    }
+}
+
+.CreateEventWrap h2 {
+
+    text-align: center;
+    margin-bottom: 3%;
+    @include respond-to(mob) { 
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    @include respond-to(medium-screens) { 
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
+
+.CreateEvent {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.CreateEvent p {
+    @include respond-to(mob) { 
+        margin-top: 5%;
+    }
+    @include respond-to(medium-screens) { 
+        margin-top: 3%;
+    }
+}
+
+.CreateEvent button {
+    @include respond-to(mob) { 
+        margin-top: 5%;
+        width: 50%;
+    }
+    @include respond-to(medium-screens) { 
+        margin-top: 2%;
+    }
+}
+
+.CreateEvent input {
+    border-radius: 3px;
+    border: 1px solid #a0a0a0;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: medium;
+    min-width: 800px;
+    max-width: 800px;
+    box-shadow: 0px 1px 1px 0px #dedede;
+    margin-bottom: 2%;
+    outline: none;
+    @include respond-to(mob) { 
+        min-width: 300px;
+        max-width: 300px;
+    }
+    @include respond-to(medium-screens) { 
+        min-width: 550px;
+        max-width: 550px;
+    }
+}
+
+.H1Title {
+    margin: 2%;
+    background: white;
+    padding: 10px;
+    border-left: 3px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 2px;
+}

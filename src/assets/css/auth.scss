@@ -1,0 +1,93 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------AUTH*/
+
+
+.Auth {
+    width: 100%;
+
+}
+
+.ErrorMsg {
+  text-align: -webkit-center;
+  margin-top: 2%;
+  color: #e00f0f;
+}
+
+.Desk {
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 6%;
+}
+
+.AuthButton {
+    margin-top: 3%;
+    @include respond-to(mob) { 
+        width: 40%;    
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+}
+
+.Login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin-top: 4%;
+    max-width: 40%;
+    box-shadow: 0px 1px 1px 0px #e8e8e8;
+    @include respond-to(mob) { width: 100%;}
+    @include respond-to(medium-screens) { 
+      width: 100%;    
+
+  }
+}
+
+button {
+    width: 20%;
+    height: 30px;
+    margin: 0 auto;
+    background: #343a40;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4f575f;
+}
+
+button:focus {outline: none}

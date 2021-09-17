@@ -1,0 +1,190 @@
+/*-----------------RESPONSIVE*/
+/*-----------------TABLE*/
+.Table table {
+  width: 170%;
+  margin-top: 2%;
+}
+
+.Table button {
+  width: 120%;
+}
+
+.TableButtonTh button {
+  background: #5ec395;
+  border: 1px solid #5ec395;
+}
+
+.TableButtonTh button:hover, .TableButtonTd button:hover {
+  background: #69cc9e;
+}
+
+.NotificationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2%;
+}
+
+.NotificationForm form {
+  width: 80%;
+  margin: 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .NotificationForm form {
+    display: block;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .NotificationForm form {
+    display: block;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .NotificationForm form {
+    margin-top: 4%;
+  }
+}
+
+.NotificationForm form h2 {
+  margin: 20px;
+  text-align: -webkit-center;
+}
+
+.NotificationForm input, .NotificationForm textarea {
+  border-radius: 3px;
+  border: 1px solid #a0a0a0;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: medium;
+  min-width: 800px;
+  max-width: 800px;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  margin-bottom: 2%;
+  outline: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .NotificationForm input, .NotificationForm textarea {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .NotificationForm input, .NotificationForm textarea {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+.NotificationForm textarea {
+  min-height: 150px;
+}
+
+.NotificationForm button {
+  width: 20%;
+}
+
+@media only screen and (max-width: 425px) {
+  .NotificationForm button {
+    width: 50%;
+  }
+}
+
+.bodiesEmailBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bodiesEmailBtns div {
+  height: 30px;
+  margin: 0 auto;
+  width: 20%;
+  border: 1px solid #e2e2e2;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 425px) {
+  .bodiesEmailBtns div {
+    width: 50%;
+  }
+}
+
+.SendEmail {
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 0px 1px 4px 0px #dedede;
+          box-shadow: 0px 1px 4px 0px #dedede;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  background: white;
+  cursor: pointer;
+  width: 5%;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 425px) {
+  .SendEmail {
+    width: 19%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SendEmail {
+    width: 10%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SendEmail {
+    width: 8%;
+    margin-top: 5%;
+  }
+}
+
+.SendEmail:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #dedede;
+          box-shadow: 1px 1px 2px 1px #dedede;
+}
+
+.SendEmail img {
+  height: 60px;
+}
+/*# sourceMappingURL=table.css.map */

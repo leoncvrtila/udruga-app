@@ -1,0 +1,229 @@
+table {
+  width: 250%;
+  border: none;
+  border-spacing: 0px;
+}
+
+table td, th {
+  text-align: center;
+  padding: 15px;
+}
+
+table tr:hover {
+  cursor: pointer;
+}
+
+thead {
+  background: #343a40;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+tbody {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even):hover {
+  background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(odd):hover {
+  background-color: #e6e6e6;
+}
+
+td {
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.searchBox {
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  margin: 2%;
+  padding: 2%;
+  background: white;
+}
+
+.searchBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.searchBoxes .Input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.searchBoxes button {
+  margin: 0;
+}
+
+.advancedSearch {
+  height: 30px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede85;
+          box-shadow: 0px 1px 1px 0px #dedede85;
+  color: #4e4e4e;
+}
+
+.tableWrap {
+  width: 100%;
+  overflow: auto;
+  max-height: 700px;
+}
+
+.modalMemberWrap {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 2%;
+}
+
+.modalMember {
+  position: absolute;
+  width: 50%;
+  -webkit-box-shadow: 0px 1px 1px 0px #e4e4e4;
+          box-shadow: 0px 1px 1px 0px #e4e4e4;
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  color: black;
+  background-color: white;
+  padding: 40px;
+  padding-top: 70px;
+}
+
+.modalMember img {
+  height: 150px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.modalMemberProp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.modalMemberProp h4 {
+  width: 50%;
+}
+
+.modalMemberItem {
+  cursor: pointer;
+  width: 50%;
+}
+
+.modalMemberBtns {
+  position: absolute;
+  width: 50%;
+  padding: 10px;
+}
+
+.modalMemberBtns button:nth-of-type(1) {
+  float: right;
+}
+
+.modalMemberBtns button:nth-of-type(2) {
+  background: #b31313;
+}
+
+.modalMemberBtns button:nth-of-type(2):hover {
+  background: #d04c4c;
+}
+
+.modalMemberProp .Input {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.modalMemberProp button {
+  margin: 10px;
+}
+
+.modalMemberProp:hover {
+  background: #f1f1f1;
+}
+
+.Backdrop {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  height: 190%;
+  width: 100%;
+  top: 0;
+}
+
+.DeleteButtonTh, .DeleteButtonTd {
+  width: 4%;
+}
+
+.Membership .MembershipButtonTh, .Membership .DeactiveDeleteButtonTd {
+  width: 10%;
+}
+
+.DeactiveDeleteButtonTh button {
+  background: #cc3737;
+  border: 1px solid #cc3737;
+}
+
+.DeactiveDeleteButtonTh button:hover, .DeactiveDeleteButtonTd button:hover {
+  background: #d04c4c;
+}
+
+.DeleteButtonTh button {
+  background: #cc3737;
+  border: 1px solid #cc3737;
+}
+
+.DeleteButtonTd button, .DeleteButtonTh button {
+  width: 95%;
+}
+
+.DeleteButtonTh button:hover, .DeleteButtonTd button:hover {
+  background: #d04c4c;
+}
+/*# sourceMappingURL=members.css.map */

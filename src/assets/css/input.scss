@@ -1,0 +1,247 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------INPUT*/
+
+// SCSS
+
+
+.btn {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    color: black;
+    padding-top: 9px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0px 1px 1px 0px rgb(222, 222, 222);
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: medium;
+}
+
+
+.input {
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: medium;
+    width: 400px;
+    box-shadow: 0px 1px 1px 0px rgb(222, 222, 222);
+}
+
+// SCSS
+
+.formWrap {
+    background: #f6f7f9;
+    font-family: sans-serif
+}
+
+.formWrap h1 {
+    text-align: -webkit-center;
+    padding-top: 5%;
+    font-size: xx-large;
+    color: #515547;
+}
+
+form {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #dedede;
+    box-shadow: 0px 1px 1px 0px #afafaf;
+    border-radius: 5px;
+    margin: 10%;
+    background: white;
+}
+
+form h4 {
+    margin-top:10%; 
+    margin-bottom:2%;
+    text-align: center;
+}
+
+form h6 {margin-top:10px; margin-bottom:10px; line-height: 18px}
+
+form img {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input[type=file] {
+    display: none;
+}
+
+.chooseImg {
+    border: 1px solid #656565;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    cursor: pointer;
+}
+
+.chooseImg:hover {
+    background: #4f575f;
+    color: white;
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.fieldOfInterest {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}
+
+.Input {
+    display: flex;
+    justify-content: center;
+    margin-top:12px; 
+    margin-bottom:12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.InputElement {
+    @extend .input;
+    @include respond-to(mob) { width: 215px;}
+    @include respond-to(medium-screens) { width: 300px; }
+}
+
+.InputElement:focus, .InputSearch:focus {outline: none;}
+
+.InputSearch{
+    @extend .input;
+    max-height: 25px;
+    @include respond-to(mob) { width: 93%}
+    @include respond-to(medium-screens) { width: 97%; }
+}
+
+.formBtns {
+    display: flex;
+}
+
+.formButtons {margin: 15px;}
+
+input[type=radio] {display: none;}
+
+.formButtons label {
+    @extend .btn;
+    padding: 15px;
+}
+
+input[type=radio]:checked + label {
+    background: #343a40;
+    color: white;
+}
+
+.formButtons label:hover {
+    background: #efefef;
+}
+
+.btnsTittle {text-align: center}
+
+.submitBtn {
+    @extend .btn;
+    padding-top: 0px;
+    background: #343a40;
+    color: white;
+    height: 40px;
+    margin-left: 45%
+}
+
+.submitBtn:hover {background:#4f575f;}
+
+
+.errorModal {
+    position: fixed;
+    height: 90px;
+    width: 250px;
+    border: 1px solid #929292;
+    border-radius: 5px;
+    background: rgb(177, 25, 25);
+    left: 15px;
+    bottom: 20px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 2;
+    box-shadow: 0px 1px 1px 0px rgb(222, 222, 222);
+}
+
+.errorModal:hover {
+    background: #961717;
+    cursor: pointer;
+}
+
+.errorModal span:nth-of-type(2) {
+    font-size: x-large;
+    font-family: cursive;
+    top: -10px;
+    position: absolute;
+    right: 8px;
+}
+
+.FieldOfInterest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.chooseField {
+    border: 1px solid #656565;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.interestBtns {
+    padding: 10px;
+    @extend .btn;
+}
+
+.searchBox button {
+    margin-top: 2%;
+}

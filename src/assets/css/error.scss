@@ -1,0 +1,30 @@
+.errorWrap .Backdrop {
+    position: fixed;
+}
+
+
+.Error {
+    text-align: -webkit-center;
+    position: absolute;
+    top: 300px;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #c8c8c8;
+    flex-direction: column;
+    box-shadow: 1px 2px 2px 1px rgba(222, 222, 222, 0.65);
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.Error button {
+    width: 15%;
+    margin-top: 5%;
+}
+
+.NotFoundPage {
+    text-align: center;
+    margin-top: 10%;
+}

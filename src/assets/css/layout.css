@@ -1,0 +1,83 @@
+/*-----------------RESPONSIVE*/
+/*-----------------LAYOUT*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fcfdff;
+}
+
+section {
+  width: 100%;
+}
+
+footer {
+  text-align: -webkit-center;
+  margin: 10%;
+}
+
+footer a, footer a:link {
+  text-decoration: none;
+  color: #26b9a1;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #4ad3bc;
+  cursor: pointer;
+}
+
+/*-----------------------SCROLL*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343a40;
+}
+
+@media only screen and (max-width: 425px) {
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #8e8e8e;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  ::-webkit-scrollbar-thumb {
+    background: #8e8e8e;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f575f;
+}
+/*# sourceMappingURL=layout.css.map */

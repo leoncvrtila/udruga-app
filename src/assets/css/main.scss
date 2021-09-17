@@ -1,0 +1,584 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------MAIN*/
+
+
+.Main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.mainItem h4 {
+  margin: 0px;
+}
+
+.mainItem img {
+  height: 200px;
+}
+
+.MainItem {
+  background: #ffffff;
+  color: black;
+  width: 20%;
+  height: 300px;
+  margin-bottom: 2%;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  text-align: -webkit-center;
+  padding-top: 20px;
+  font-size: xx-large;
+  font-family: sans-serif;
+  text-decoration: none;
+  box-shadow: 0px 1px 8px 0px #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;    
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100px 100px;
+  @include respond-to(mob) { 
+    width: 85%;    
+    margin-bottom: 5%;
+}
+@include respond-to(medium-screens) { 
+  width: 85%;    
+  margin-bottom: 5%;   
+
+}
+@include respond-to(laptop-screens) { 
+  width: 30%;    
+  margin-bottom: 5%;   
+
+}
+}
+
+.MainItem p {
+  font-size: 60px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background: #f3f3f3;
+  border-radius: 100px;
+  color: #3ab7b7;
+}
+
+.MainItem h5 {
+  margin-bottom: auto;
+  margin-top: 20%;
+  color: #717171;
+}
+
+.MainItem:hover {
+  box-shadow: 1px 3px 3px 1px #dedede;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100px 100px;
+}
+
+.Analytics {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.AnalyticsSearch{
+  width: 20%;
+
+}
+
+.Analytics input {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  box-shadow: 0px 1px 8px 0px #e8e8e8;
+}
+
+.AnalyticsResults {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  border: 1px solid #efefef;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: auto;
+  width: 70%;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.AnalyticsResults div {
+  width: 100%;
+}
+
+.AnalyticsResults p {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.AnalyticsResults p:hover {
+  background: #efefef;
+}
+
+.AnalyticsCountyPieDiv {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.ResetBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #f36b6b;
+    color: white;
+    border-radius: 5px;
+    width: 10%;
+    cursor: pointer;
+    height: 38px;
+}
+
+.ResetBtn:hover {
+  background: #f88181;
+}
+
+.AnalyticsSexnEmployment {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  display: flex; 
+  height: 750px; 
+  width: 90%;
+  box-shadow: 0px 1px 8px 0px #e8e8e8;
+}
+
+.AnalyticsTwoPieDiv {
+  display: block; 
+  height: 600px; 
+  width: 90%;
+  margin: auto;
+}
+
+.AnalyticsTwoPieDiv h3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.AnalyticsBar {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  display: flex; 
+  height: 800px; 
+  width: 90%;
+  justify-content: center;
+  box-shadow: 0px 1px 8px 0px #e8e8e8;
+}
+
+.AnalyticsBarWrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.AnalyticsBarWrapper h3, .AnalyticsBarWrapper h5 {
+  text-align: center;
+  padding-top: 5px;
+  color: #333333;
+}
+
+.AnalyticsBarUpLine {
+  height: 600px;
+  width: 2px;
+  background: #c7c7c7;
+  visibility: hidden;
+}
+
+.AnalyticsBarDownLine {
+  height: 2px;
+  width: 1200px;
+  background: #c7c7c7;
+}
+
+.AnalyticsBarUp{
+  display: flex;
+  margin-top: 10px;
+}
+
+.AnalyticsBarUpWrapperBars {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+}
+
+.AnalyticsBarUpBars {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+
+.AnalyticsBarItem {
+  height: 100px;
+  width: 60px;
+  background: blue;
+  margin-left: 8px;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  min-height: 25px;
+}
+
+.AnalyticsBarDownTitles {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.AnalyticsBarDownTitleLine {
+    width: 2px;
+    height: 8px;
+    background: #c7c7c7;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.AnalyticsBarItemDelete {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 5px;
+    border: 1px solid #f1f1f1;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.AnalyticsBarItemDelete:hover {
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.AnalyticsProffesions {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  display: flex; 
+  height: 800px; 
+  width: 90%;
+  justify-content: center;
+}
+
+.chooseImg {
+  border: 1px solid #656565;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
+  @include respond-to(mob) { 
+      width: 40%; 
+      margin-bottom: 2%;
+  }
+}
+
+input[type=file] {
+  display: none;
+}
+
+.Contract {
+  background: white;
+  height: 850px;
+  width: 700px;
+  margin: auto;
+  margin-top: 4%;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px #bfbfbfa6;
+  display: block;
+}
+
+.ContractImg {
+  height: 90px;
+  background-size: 200px 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 3%;
+}
+
+.ContractTxt {
+  border: 1px solid #cacaca;
+  height: 620px;
+  width: 600px;
+  margin: auto;
+  margin-top: 3%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.ContractTxt h5 {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.ContractTxt h4 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.ContractTxt p {
+  margin-top: 1.5%;
+
+}
+
+.ContractBtn {
+  width: 25%;
+  background: #3a527f;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 4.5%;
+}
+
+.ContractBtn:hover {
+  background: #5e7aad;
+  cursor: pointer;
+}
+
+.ContractForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.ContractForm input {
+  height: 25px;
+  width: 35%;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px #e8e8e8;
+  padding: 7px;
+  outline: none;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.ContractFade {
+  -webkit-animation: seconds 1.0s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 2s;
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+    position: absolute;   
+  }
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;     
+  }
+}
+
+.Settings {
+  padding: 30px;
+  margin-left: 12%;
+}
+
+.Settings h2, .Settings h4 {
+  margin-top: 1.5%;
+}
+
+.Settings p {
+  margin-top: 8px;
+}
+
+.Settings a, .Settings a:link {
+
+  display: block;
+  margin-top: 6px;
+  text-decoration: none;
+  padding: 6px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  width: 15%;
+  text-align: center;
+  background: #3ccab3;
+  color: white;
+}
+
+.Settings a:hover {
+  background: #424950;
+}
+
+.SettingsBtn {
+  display: block;
+  margin-top: 6px;
+  padding: 6px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  width: 15%;
+  text-align: center;
+  background: #ff7070;
+  color: white;
+}
+
+.SettingsBtn:hover {
+  background: #ff8080;
+  cursor: pointer;
+}
+
+.SettingsModal {
+  background: white;
+  border: 1px solid rgb(235, 235, 235);
+  width: 20%;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  z-index: 1111;
+  top: 40%;
+  left: 40%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.SettingsModal textarea {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  outline: none;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5%;
+}
+
+.SettingsModal h4 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.SettingsModalWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.SettingsModalBtnSample {
+
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px #dadada;
+  cursor: pointer;
+  color: white;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.SettingsModalBtn:nth-child(1) {
+
+  @extend .SettingsModalBtnSample;
+  background: #ff7070;
+  border: 1px solid #ff7070;
+
+
+}
+
+.SettingsModalBtn:nth-child(2) {
+
+  @extend .SettingsModalBtnSample;
+  background: #3ccab3;
+  border: 1px solid #3ccab3;
+}
+
+

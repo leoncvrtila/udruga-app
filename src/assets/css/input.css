@@ -1,0 +1,281 @@
+/*-----------------RESPONSIVE*/
+/*-----------------INPUT*/
+.btn, .formButtons label, .submitBtn, .interestBtns {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: black;
+  padding-top: 9px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: medium;
+}
+
+.input, .InputElement, .InputSearch {
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: medium;
+  width: 400px;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+}
+
+.formWrap {
+  background: #f6f7f9;
+  font-family: sans-serif;
+}
+
+.formWrap h1 {
+  text-align: -webkit-center;
+  padding-top: 5%;
+  font-size: xx-large;
+  color: #515547;
+}
+
+form {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 0px 1px 1px 0px #afafaf;
+          box-shadow: 0px 1px 1px 0px #afafaf;
+  border-radius: 5px;
+  margin: 10%;
+  background: white;
+}
+
+form h4 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+form h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+form img {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input[type=file] {
+  display: none;
+}
+
+.chooseImg {
+  border: 1px solid #656565;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  cursor: pointer;
+}
+
+.chooseImg:hover {
+  background: #4f575f;
+  color: white;
+}
+
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+}
+
+.fieldOfInterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+.Input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 425px) {
+  .InputElement {
+    width: 215px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputElement {
+    width: 300px;
+  }
+}
+
+.InputElement:focus, .InputSearch:focus {
+  outline: none;
+}
+
+.InputSearch {
+  max-height: 25px;
+}
+
+@media only screen and (max-width: 425px) {
+  .InputSearch {
+    width: 93%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputSearch {
+    width: 97%;
+  }
+}
+
+.formBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formButtons {
+  margin: 15px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.formButtons label {
+  padding: 15px;
+}
+
+input[type=radio]:checked + label {
+  background: #343a40;
+  color: white;
+}
+
+.formButtons label:hover {
+  background: #efefef;
+}
+
+.btnsTittle {
+  text-align: center;
+}
+
+.submitBtn {
+  padding-top: 0px;
+  background: #343a40;
+  color: white;
+  height: 40px;
+  margin-left: 45%;
+}
+
+.submitBtn:hover {
+  background: #4f575f;
+}
+
+.errorModal {
+  position: fixed;
+  height: 90px;
+  width: 250px;
+  border: 1px solid #929292;
+  border-radius: 5px;
+  background: #b11919;
+  left: 15px;
+  bottom: 20px;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 2;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+}
+
+.errorModal:hover {
+  background: #961717;
+  cursor: pointer;
+}
+
+.errorModal span:nth-of-type(2) {
+  font-size: x-large;
+  font-family: cursive;
+  top: -10px;
+  position: absolute;
+  right: 8px;
+}
+
+.FieldOfInterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.chooseField {
+  border: 1px solid #656565;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.interestBtns {
+  padding: 10px;
+}
+
+.searchBox button {
+  margin-top: 2%;
+}
+/*# sourceMappingURL=input.css.map */

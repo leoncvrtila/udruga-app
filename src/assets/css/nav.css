@@ -1,0 +1,93 @@
+/*-----------------RESPONSIVE*/
+/*-----------------NAV*/
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #fdfdfd;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    overflow-x: scroll;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  nav {
+    overflow-x: scroll;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  nav {
+    margin-left: 1.5%;
+  }
+}
+
+nav img {
+  height: 54px;
+  width: 54px;
+  margin: 8px;
+  vertical-align: middle;
+}
+
+nav a, nav a:link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: -webkit-center;
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 2%;
+  -webkit-box-shadow: 0px 1px 3px 0px #00000024;
+          box-shadow: 0px 1px 3px 0px #00000024;
+  background: #ffffff;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 425px) {
+  nav a, nav a:link {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  nav a, nav a:link {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  nav a, nav a:link {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding: 20px;
+  }
+}
+
+.is-active {
+  background: #343a40;
+  color: white;
+}
+/*# sourceMappingURL=nav.css.map */

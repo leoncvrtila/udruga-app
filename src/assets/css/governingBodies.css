@@ -1,0 +1,67 @@
+/*-----------------RESPONSIVE*/
+/*-----------------BODIES*/
+.GoverningBodies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.GoverningBodies img {
+  height: 120px;
+}
+
+.GoverningBodies a {
+  background: #ffffff;
+  color: black;
+  width: 20%;
+  height: 300px;
+  margin-bottom: 2%;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  text-align: -webkit-center;
+  padding-top: 20px;
+  font-size: xx-large;
+  font-family: sans-serif;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .GoverningBodies a {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .GoverningBodies a {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .GoverningBodies a {
+    width: 30%;
+  }
+}
+
+.GoverningBodies a:hover {
+  -webkit-box-shadow: 1px 3px 3px 1px #dedede;
+          box-shadow: 1px 3px 3px 1px #dedede;
+}
+/*# sourceMappingURL=governingBodies.css.map */
